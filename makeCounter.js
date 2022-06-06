@@ -1,7 +1,7 @@
 const makeCounter = function(start = 0) {
   let obj = {};
 
-  obj.value = function() {
+  obj.value = ()=>{
     return start;
   };
   obj.increment = function() {

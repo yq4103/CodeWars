@@ -1,8 +1,8 @@
 const group = function(collection, grouper) {
   let result = {};
 
-  for (let item of collection) {
-    result[grouper(item)] = collection.filter(collection => grouper(item) === grouper(collection));
+  for (let element of collection) {
+    result[grouper(element)] = collection.filter(collection => grouper(collection) === grouper(element));
   }
 
   return result;

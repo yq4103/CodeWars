@@ -1,14 +1,14 @@
 const minArgs = function() {
   let arr = [];
-  for (let i=0; i < arguments.length; i++) {
+  for (let i = 0; i < arguments.length; i++) {
     arr.push(arguments[i]);
   }
 
-  const sortNum = function(a,b) {
+  const sortNum = (a,b)=> {
     return a - b;
   };
 
-  let result = arr.sort(sortNum);
+  const result = arr.sort(sortNum);
 
   return result[0];
 };
